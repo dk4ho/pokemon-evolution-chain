@@ -1,0 +1,21 @@
+{
+    "name": "pokemon-evolution-chain",
+    "version": "1.0.0",
+    "description": "Pokemon Evolution Chain application allows users to either provide a Pokemon name as a command line argument or interactively enter a name when prompted. The evolution chain of the specified Pokemon is then retrieved and logged to the console.",
+    "main": "app.js",
+    "scripts": {
+        "app": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dk4ho/pokemon-evolution-chain"
+    },
+    "keywords": [],
+    "author": "DK",
+    "license": "MIT",
+    "dependencies": {
+        "pokemonApi": "file:./modules/pokemon-api"
+    }
+}
+
+
