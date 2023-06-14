@@ -3,7 +3,7 @@
 This module interacts with a Pokemon API and retrieves the necessary data.
 
 ## Usage
-To use this module, you need to have an API client that can retrieve evolution chain data from the Pokemon API. The API client is included in the /apiClients directory, but you can replace it with your own implementation if needed, allowing different implementations such as database connections or file-based storage.
+To use this module, you need to have an API client that can retrieve evolution chain data from the Pokemon API. The API client is included in the /apiClients directory, but you can replace it with your own implementation if needed, allowing integration of different data sources, such as database-based or files-based storages.
 
 
 ```javascript
@@ -78,19 +78,15 @@ This will execute the unit tests and display the test results in the console.
 You can replace the default API client with your own implementation. Make sure your custom API client has a `getEvolutionChain` method that accepts a Pokemon name as a parameter and returns the evolution chain object for the Pokemon.
 
 ```javascript
-
 // Example of a custom API client
-class MyApiClient {
-    constructor() {
-        // Custom initialization
-    }
 
-    getEvolutionChain(pokemonName) {
-        // Custom implementation to retrieve evolution chain data
-    }
+function getEvolutionChain(name){
+    // Custom implementation to retrieve evolution chain data
 }
 
-module.exports = MyApiClient;
+module.exports = {
+    getEvolutionChain
+}
 ```
 
 

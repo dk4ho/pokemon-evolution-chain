@@ -1,5 +1,9 @@
+// Example of a custom API client
+
 function getEvolutionChain(name){
-    return null
+    // Custom implementation to retrieve evolution chain data
 }
 
-module.exports = getEvolutionChain
+module.exports = {
+    getEvolutionChain
+}

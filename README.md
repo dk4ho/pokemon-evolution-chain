@@ -4,9 +4,16 @@ This application allows users to retrieve and log the evolution chain of a Pokem
 
 ## Table of contents
 
+* [About PokemonApi module](#about-pokemon-api-module)
 * [Application details](#application-details)
 * [How to Run](#how-to-run)
 * [Examples](#examples)
+
+
+## About PokemonApi module
+The [PokemonApi](modules/pokemon-api/README.md) module serves as the core component of the application, providing a flexible and extendable base for future functionality. By utilising dependency injection, particularly with the apiClient, the module is loosely coupled with specific implementations. This allows for easy integration of different data sources, such as a databases or files-based storages, while maintaining existing functionality. This flexibility enables the module to adapt to changing business requirements and ensures its versatility as a foundation for future enhancements.
+
+Read whole documentation for this module here [PokemonApi](modules/pokemon-api/README.md)
 
 ## Application details
 The application follows these main steps
@@ -26,8 +33,10 @@ The application allows users to either provide a Pokemon name as a command line 
 ## How to Run
 
 1. Ensure you have Node.js installed on your system. You can download it from [Node.js](https://nodejs.org/) official website.
+    
+    **Verify Installation**
 
-    You can check if you have it installed by runing command in terminal or command prompt.
+    You can check if you have it installed by runing command in terminal or command prompt. If Node.js is installed successfully then it will display the version of the Node.js
     ```bash
     node -v
     ```
